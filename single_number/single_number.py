@@ -1,11 +1,14 @@
+from collections import Counter
+
 def single_number(arr):
     '''
     Input: a List of integers where every int except one shows up twice
     Returns: an integer
     '''
-    for i in range(len(arr)):
-        if arr.count(arr[i]) == 1:
-            return arr[i]
+    c = Counter(arr)
+    for elem, cnt in c.items():
+        if cnt == 1:
+            return elem
 
 
 if __name__ == '__main__':

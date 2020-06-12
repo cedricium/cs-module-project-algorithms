@@ -3,7 +3,7 @@ def moving_zeroes(arr):
     Input: a List of integers
     Returns: a List of integers
     '''
-    sorted_arr = [0] * len(arr)
+    sorted_arr = [0] * len(arr) # depend on arr length (n)
     current_index = 0
 
     for i in range(len(arr)):
